@@ -4,7 +4,7 @@ function init() {
     Tabletop.init({
         key: key,
         callback: function(data, tabletop) {
-            console.log(data[0])
+            console.log(data)
         },
         simpleSheet: true
     })
