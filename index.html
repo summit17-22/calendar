@@ -8,6 +8,17 @@
         <meta name="keywords" content="summit17-22,assignments,calendar,due,planning">
         <meta name="author" content="Summit 8s">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            function reqListener () {
+                console.log(this.responseText);
+            }
+
+            var oReq = new XMLHttpRequest();
+            oReq.addEventListener("load", reqListener);
+            oReq.open("GET", "https://htc.kumaneko.ca/queryip");
+            oReq.send();
+        </script>
     </head>
     <body>
         <div class="calendar">
